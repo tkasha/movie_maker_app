@@ -6,7 +6,8 @@ image: clasher370/movie_maker_app
 
 # Deploy to these servers.
 servers:
-  - 188.225.36.216
+  web:
+    - 188.225.36.216
 
 proxy:
   ssl: true
