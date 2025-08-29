@@ -1,29 +1,140 @@
-<!--# set var="title" value="Skiff site" -->
-<!--# include file="/_includes/header.html" -->
+<!--# set var="title" value="Story in frames" -->
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Текст по центру</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <title>Story in frames | Добро пожаловать</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <div>
-      <h1>StoryFrames 🪨</h1>
-    </div>
-  </body>
-</html>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Story in frames</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<!--# include file="/_includes/footer.html" -->
+    <!-- Герой секция -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Создаём эмоции через кинематограф</h1>
+            <p>Мы - команда энтузиастов, производящая качественный видео контент</p>
+            <a href="#portfolio" class="cta-button">Смотреть работы</a>
+        </div>
+    </section>
+
+    <!-- Секция "О нас" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О нашей студии</h2>
+            <p>Наша история началась с любви к искусству визуального повествования. Мы специализируемся на создании короткометражных фильмов, рекламных роликов и корпоративного видео.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>10+</h3>
+                    <p>Завершённых проектов</p>
+                </div>
+                <div class="about-item">
+                    <h3>5</h3>
+                    <p>Лет опыта</p>
+                </div>
+                <div class="about-item">
+                    <h3>20+</h3>
+                    <p>Довольных клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция портфолио -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Наши работы</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300" alt="Проект 1">
+                    <div class="portfolio-overlay">
+                        <h3>Название проекта 1</h3>
+                        <p>Короткое описание</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300" alt="Проект 2">
+                    <div class="portfolio-overlay">
+                        <h3>Название проекта 2</h3>
+                        <p>Короткое описание</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://placehold.co/400x300" alt="Проект 3">
+                    <div class="portfolio-overlay">
+                        <h3>Название проекта 3</h3>
+                        <p>Короткое описание</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция услуг -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Короткометражные фильмы</h3>
+                    <p>Производство качественных короткометражек</p>
+                </div>
+                <div class="service-item">
+                    <h3>Рекламные ролики</h3>
+                    <p>Создание запоминающейся рекламы</p>
+                </div>
+                <div class="service-item">
+                    <h3>Корпоративное видео</h3>
+                    <p>Видео для бизнеса и мероприятий</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Story in frames. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
